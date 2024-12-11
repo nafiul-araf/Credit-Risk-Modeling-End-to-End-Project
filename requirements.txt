@@ -1,0 +1,10 @@
+joblib==1.4.2
+mysql-connector==2.2.9
+mysql-connector-python==9.0.0
+numpy==2.2.0
+scikit-learn==1.5.2
+scipy==1.14.1
+setuptools==75.1.0
+threadpoolctl==3.5.0
+wheel==0.44.0
+xgboost==2.1.3
