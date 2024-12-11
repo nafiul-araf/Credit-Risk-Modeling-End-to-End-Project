@@ -52,7 +52,7 @@ avg_dpd_per_dm = col5.number_input("⚠ Avg DPD", min_value=0, value=0, help="Av
 dmtlm = col6.slider("📅 DMTLM (Delinquent Months to Loan Ratio)", min_value=0, max_value=100, value=0, help="Delinquency ratio, 0 if no loans.")
 
 # Row 4: Credit Utilization, Total Loan Months, Loan Purpose
-st.subheader("🏡 Loan Purpose")
+st.subheader("🏡 Loan States")
 col7, col8, col9 = st.columns(3)
 
 credit_utilization_ratio = col7.slider("💳 Credit Utilization (%)", min_value=0, max_value=100, value=0, help="Percentage of utilized credit, 0 if no credit.")
