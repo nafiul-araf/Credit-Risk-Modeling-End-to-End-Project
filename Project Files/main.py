@@ -5,10 +5,10 @@ Created on Tue Dec 10 13:29:38 2024
 @author: Admin
 """
 
-# import os
-# print(os.getcwd())
+import os
+print(os.getcwd())
 
-# os.chdir(r'Project Files')
+os.chdir(r'D:\Data Science and Data Analytics\ML\Assignment - Credit Risk Modelling\Credit Risk Modelling\Project Files')
 
 import streamlit as st
 from utils import predict

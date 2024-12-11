@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 
-model_data = joblib.load(r"Project Files/model/model_data.pkl")
+model_data = joblib.load(r"D:\Data Science and Data Analytics\ML\Assignment - Credit Risk Modelling\Credit Risk Modelling\Project Files\model\model_data.pkl")
 model_data
 
 
