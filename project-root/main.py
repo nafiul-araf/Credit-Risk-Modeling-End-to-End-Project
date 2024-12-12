@@ -26,7 +26,7 @@ with st.sidebar:
     2. Adjust sliders and dropdowns for interactive inputs.
     3. Click 'Calculate Risk' to view results.
     """)
-    st.image("Lauki Finance.JPG", caption="Your Trusted Finance Partner")  # Add a relevant image/logo.
+    st.image("project-root/Lauki Finance.JPG", caption="Your Trusted Finance Partner")  # Add a relevant image/logo.
 
 # Input Fields
 st.subheader("💼 Customer Details")
