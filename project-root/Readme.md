@@ -267,4 +267,79 @@ else:
 3. **Integrate and Analyze**:
    - Use outputs to evaluate borrower risk profiles and make informed decisions. 
 
-This documentation highlights the application’s design and practical relevance, showcasing a blend of technical and user-focused considerations to appeal to recruiters.
+
+# **Documentation for Tuned Hyperparameters**
+
+## **Overview**
+The XGBoost model utilized in this project has been fine-tuned using **Optuna**, an advanced hyperparameter optimization framework. These optimized hyperparameters improve the model's performance by balancing predictive accuracy, computational efficiency, and generalization to unseen data. Below is an explanation of the selected hyperparameters and their significance.
+
+---
+
+## **Hyperparameter Explanation**
+
+1. **`eta` (Learning Rate)**: `0.03962150782811734`
+   - **Definition**: Controls the step size during the optimization process.
+   - **Effect**: A smaller `eta` ensures more gradual learning, preventing overfitting and improving stability during training. The value of `0.0396` represents a conservative learning rate, ideal for fine-tuning.
+
+2. **`max_depth`**: `3`
+   - **Definition**: The maximum depth of each decision tree.
+   - **Effect**: Limits the complexity of individual trees, preventing overfitting. A depth of `3` promotes simpler models, improving generalization to new data.
+
+3. **`subsample`**: `0.6272358596011762`
+   - **Definition**: The fraction of samples used to train each tree.
+   - **Effect**: Helps prevent overfitting by using only `62.7%` of the data for training each tree. This introduces randomness and enhances the model's robustness.
+
+4. **`colsample_bytree`**: `0.7136867658100697`
+   - **Definition**: The fraction of features considered when building each tree.
+   - **Effect**: Ensures diversity by using `71.4%` of the features for each tree, reducing the risk of overfitting while maintaining strong predictive power.
+
+5. **`n_estimators`**: `388`
+   - **Definition**: The number of boosting rounds or decision trees in the ensemble.
+   - **Effect**: Determines the total number of trees in the model. A value of `388` provides sufficient boosting iterations to achieve high accuracy without excessive computation.
+
+---
+
+## **Why These Hyperparameters Matter**
+The selected hyperparameters strike a balance between:
+- **Performance**: Achieving high metrics such as AUC, Gini, and KS.
+- **Efficiency**: Avoiding unnecessary complexity and computational overhead.
+- **Generalization**: Ensuring the model performs well on new, unseen data.
+
+---
+
+## **Optimization Framework**
+The hyperparameters were tuned using **Optuna**, which employs:
+- **Bayesian Optimization**: Efficient exploration of the hyperparameter space.
+- **Objective Function**: Maximizing evaluation metrics like AUC and Gini.
+- **Stopping Criteria**: Automatically halts optimization when no significant improvements are observed.
+
+---
+
+## **Benefits of Fine-Tuning**
+1. **Improved Predictive Power**: Optimal settings enhance the model’s ability to distinguish default from non-default classes.
+2. **Reduced Overfitting**: Regularization through `subsample` and `colsample_bytree` ensures the model generalizes well.
+3. **Efficient Training**: The chosen hyperparameters minimize unnecessary computation, making the model more deployable in production environments.
+
+---
+
+## **How to Apply These Hyperparameters**
+If you want to replicate or adapt this model:
+1. Use the following dictionary of hyperparameters in your XGBoost training function:
+   ```python
+   params = {
+       'eta': 0.03962150782811734,
+       'max_depth': 3,
+       'subsample': 0.6272358596011762,
+       'colsample_bytree': 0.7136867658100697,
+       'n_estimators': 388
+   }
+   ```
+2. Initialize the XGBoost classifier:
+   ```python
+   from xgboost import XGBClassifier
+   model = XGBClassifier(**params)
+   ```
+3. Train the model on your dataset:
+   ```python
+   model.fit(X_train, y_train)
+   ```
