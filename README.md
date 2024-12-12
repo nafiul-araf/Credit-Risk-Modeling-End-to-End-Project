@@ -18,7 +18,7 @@ This project aims to develop a machine learning model to predict default risk, e
 - **Techniques**:
   - Feature engineering using domain relevance and statistical analysis.
 
-    [FI](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Feature%20importance.png)
+    ![FI](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Feature%20importance.png)
 
   - Resampling methods (over-sampling via SMOTE, under-sampling).
 - **Models Evaluated**:
@@ -36,7 +36,7 @@ This project aims to develop a machine learning model to predict default risk, e
   - SHAP (feature importance)
   - LIME (local interpretability)
 
-    [lime](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Lime.JPG)
+    ![lime](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Lime.JPG)
 
 ### Key Results
 - The model demonstrates superior ability to classify defaults with high precision and recall.
@@ -51,7 +51,7 @@ This project aims to develop a machine learning model to predict default risk, e
 ### Visualizations
 1. AUC-ROC curve with near-perfect performance (AUC: 0.99).
 
-   [rocauc](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/ROC%20Curve.png)
+   ![rocauc](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/ROC%20Curve.png)
    
 2. SHAP summary plot illustrating top features influencing predictions.
 
