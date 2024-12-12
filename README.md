@@ -3,7 +3,7 @@
 ## Project Overview
 Credit risk modeling is crucial for financial institutions to assess the likelihood of a borrower defaulting on a loan. This project involves analyzing multiple datasets to identify factors influencing credit risk, ultimately leading to better decision-making processes. The project provides a credit risk assessment system powered by machine learning. It evaluates borrowers' default risk, calculates credit scores, and assigns credit ratings. The project is built using Python and Streamlit, providing an interactive and user-friendly interface.
 
-[Web Link](https://credit-risk-modeling-lauki-finance.streamlit.app/)
+[**Web Link**](https://credit-risk-modeling-lauki-finance.streamlit.app/)
 
 ## Default Risk Prediction: Model Evaluation and Deployment
 
