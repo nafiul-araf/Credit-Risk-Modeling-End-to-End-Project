@@ -1,4 +1,4 @@
-# Project Documentation: Feature Engineering and Model Building
+# Feature Engineering and Model Building
 
 ## Overview
 
