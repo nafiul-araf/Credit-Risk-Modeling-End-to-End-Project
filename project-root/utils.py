@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 
-model_data = joblib.load(r"model/model_data.pkl")
+model_data = joblib.load(r"project-root/model/model_data.pkl")
 model_data
 
 
