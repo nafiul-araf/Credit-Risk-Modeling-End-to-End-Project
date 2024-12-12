@@ -165,7 +165,7 @@ sns.barplot(x=target_correlation.index, y=target_correlation.values, palette='co
 ### **10. Summary**
 A detailed summary is provided at the end of the analysis, highlighting key findings and ensuring data integrity for further modeling. 
 
-####**Outlier Handling Process**
+#### **Outlier Handling Process**
 
 This outlier handling process combines technical methods and domain knowledge to ensure data integrity:
 
@@ -189,7 +189,7 @@ This outlier handling process combines technical methods and domain knowledge to
 This approach ensures that both statistical anomalies and domain-specific inconsistencies are handled effectively.
 
 
-####**Univariate Analysis**
+#### **Univariate Analysis**
 
 ***1. Distribution of Categorical Features***
 
@@ -201,7 +201,7 @@ These charts provide a visual overview of the distribution of various categorica
 This set of boxplots provides a visual representation of the distribution of various numerical features in the loan dataset. We can observe that most of the features exhibit a right-skewed distribution, indicating that a majority of the values are concentrated towards the lower end of the range. However, some features like "Loan amount" and "Processing fee" show a more uniform distribution.
 
 
-####**Bivariate Analysis**
+#### **Bivariate Analysis**
 
 ***1. Loan Amount vs Income by Default***
 
