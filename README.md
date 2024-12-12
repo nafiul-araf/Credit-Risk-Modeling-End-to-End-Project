@@ -14,9 +14,6 @@ This project aims to develop a machine learning model to predict default risk, e
 - **Dataset**: Imbalanced classification problem with 10% defaults.
 - **Techniques**:
   - Feature engineering using domain relevance and statistical analysis.
-
-    ![FI](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Feature%20importance.png)
-
   - Resampling methods (over-sampling via SMOTE, under-sampling).
 - **Models Evaluated**:
   - Logistic Regression
@@ -31,6 +28,9 @@ This project aims to develop a machine learning model to predict default risk, e
   - KS Statistic: 86.87%
 - **Interpretability Tools**:
   - SHAP (feature importance)
+
+    ![FI](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Feature%20importance.png)
+
   - LIME (local interpretability)
 
     ![lime](https://github.com/nafiul-araf/Credit-Risk-Modeling-End-to-End-Project/blob/main/images/Lime.JPG)
