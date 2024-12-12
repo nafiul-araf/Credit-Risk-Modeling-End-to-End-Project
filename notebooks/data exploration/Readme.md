@@ -1,4 +1,6 @@
-# Objectives
+# Data Exploration and Familialzation
+
+## Objectives
 1. Load and explore three datasets: bureau data, loan data, and customer data.
 2. Familiarize with the structure, content, and key features of each dataset.
 3. Merge the datasets into a unified structure using `Customer ID` as the primary key.
