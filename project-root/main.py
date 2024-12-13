@@ -16,7 +16,7 @@ from utils import predict
 
 # Set the page configuration and title
 st.set_page_config(page_title="Credit Risk Modeling", page_icon="📊", layout="centered")
-st.title("📊 Lauki Finance: Credit Risk Modelling")
+st.title("📊 Credit Risk Modelling")
 
 # Sidebar for User Instructions
 with st.sidebar:
