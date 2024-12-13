@@ -159,7 +159,8 @@ All dependencies are listed in `requirements.txt` for easy installation.
 1. **Home Page**: Displays the project title and input interface.
 2. **Results Page**: Shows default probability, credit score, and rating with actionable insights.
 
-![image](https://github.com/user-attachments/assets/f9dea39a-eb10-4e59-98e7-e08c066e5bb6)
+![image](https://github.com/user-attachments/assets/d1b51282-cf2a-4e9a-ab19-fbe407b425ba)
+
 
 
 ---
