@@ -34,9 +34,9 @@ st.subheader("💼 Customer Details")
 # Row 1: Age, Income, Loan Amount
 col1, col2, col3 = st.columns(3)
 
-age = col1.number_input("📅 Age", min_value=18, max_value=100, value=28, help="Enter your age (18-100).")
-income = col2.number_input("💰 Income (Annual)", min_value=0, max_value=5000000, value=290875, step=50000, help="Your annual income in currency units.")
-loan_amount = col3.number_input("🏦 Loan Amount", min_value=0, value=2560000, help="Total loan amount you want to borrow.")
+age = col1.number_input("Age", min_value=18, max_value=100, value=28, help="Enter your age (18-100).")
+income = col2.number_input("Income (Annual)", min_value=0, max_value=5000000, value=290875, step=50000, help="Your annual income in currency units.")
+loan_amount = col3.number_input("Loan Amount", min_value=0, value=2560000, help="Total loan amount you want to borrow.")
 
 # Row 2: Loan Insights
 st.subheader("📊 Loan Insights")
@@ -47,24 +47,24 @@ st.metric(label="Loan-to-Income Ratio (LTI)", value=f"{lti:.2f}", help="This sho
 st.subheader("📑 Loan Details")
 col4, col5, col6 = st.columns(3)
 
-loan_tenure_months = col4.slider("⏳ Loan Tenure (Months)", min_value=6, max_value=240, step=6, value=36, help="Select the loan tenure in months.")
-avg_dpd_per_dm = col5.number_input("⚠ Avg DPD", min_value=0, value=0, help="Average Delinquent Days (Defaults), set to 0 if no loan history.")
-dmtlm = col6.slider("📅 DMTLM (Delinquent Months to Loan Ratio)", min_value=0, max_value=100, value=0, help="Delinquency ratio, 0 if no loans.")
+loan_tenure_months = col4.slider("Loan Tenure (Months)", min_value=6, max_value=240, step=6, value=36, help="Select the loan tenure in months.")
+avg_dpd_per_dm = col5.number_input("Avg DPD", min_value=0, value=0, help="Average Delinquent Days (Defaults), set to 0 if no loan history.")
+dmtlm = col6.slider("DMTLM (Delinquent Months to Loan Ratio)", min_value=0, max_value=100, value=0, help="Delinquency ratio, 0 if no loans.")
 
 # Row 4: Credit Utilization, Total Loan Months, Loan Purpose
 st.subheader("🏡 Loan Purpose")
 col7, col8, col9 = st.columns(3)
 
-credit_utilization_ratio = col7.slider("💳 Credit Utilization (%)", min_value=0, max_value=100, value=0, help="Percentage of utilized credit, 0 if no credit.")
-total_loan_months = col8.number_input("📜 Total Loan Months", min_value=0, value=0, help="Cumulative loan tenure across all loans, 0 if no loans.")
-loan_purpose = col9.selectbox("🎯 Loan Purpose", ['Education', 'Home', 'Auto', 'Personal'], help="Purpose of the loan.")
+credit_utilization_ratio = col7.slider("Credit Utilization (%)", min_value=0, max_value=100, value=0, help="Percentage of utilized credit, 0 if no credit.")
+total_loan_months = col8.number_input("Total Loan Months", min_value=0, value=0, help="Cumulative loan tenure across all loans, 0 if no loans.")
+loan_purpose = col9.selectbox("Loan Purpose", ['Education', 'Home', 'Auto', 'Personal'], help="Purpose of the loan.")
 
 # Row 5: Loan Type, Residence Type
 st.subheader("🏠 Loan and Residence Type")
 col10, col11 = st.columns(2)
 
-loan_type = col10.radio("🔑 Loan Type", ['Unsecured', 'Secured'], help="Choose the type of loan.")
-residence_type = col11.selectbox("🏡 Residence Type", ['Owned', 'Rented', 'Mortgage'], help="Your current residence type.")
+loan_type = col10.radio("Loan Type", ['Unsecured', 'Secured'], help="Choose the type of loan.")
+residence_type = col11.selectbox("Residence Type", ['Owned', 'Rented', 'Mortgage'], help="Your current residence type.")
 
 # Action Button
 if st.button("Calculate Risk"):
