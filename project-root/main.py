@@ -49,7 +49,7 @@ col4, col5, col6 = st.columns(3)
 
 loan_tenure_months = col4.slider("Loan Tenure (Months)", min_value=6, max_value=240, step=6, value=36, help="Select the loan tenure in months.")
 avg_dpd_per_dm = col5.number_input("Avg DPD", min_value=0, value=0, help="Average Delinquent Days (Defaults), set to 0 if no loan history.")
-dmtlm = col6.slider("DMTLM (Delinquent Months to Loan Ratio)", min_value=0, max_value=100, value=0, help="Delinquency ratio, 0 if no loans.")
+dmtlm = col6.slider("DMTLM (Delinquent Months to Loan Month Ratio)", min_value=0, max_value=100, value=0, help="Delinquency ratio, 0 if no loans.")
 
 # Row 4: Credit Utilization, Total Loan Months, Loan Purpose
 st.subheader("🏡 Loan Purpose")
